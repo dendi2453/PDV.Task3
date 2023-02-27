@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\desktop.jpg" />
+    <None Remove="Images\task1.jpg" />
+    <None Remove="Images\task1.png" />
+    <None Remove="Images\task2.jpg" />
+    <None Remove="Images\task2.png" />
+    <None Remove="Images\task3.jpg" />
+    <None Remove="Images\task3.png" />
+    <None Remove="Images\task4.jpg" />
+    <None Remove="Images\task4.png" />
+    <None Remove="Images\task5.jpg" />
+    <None Remove="Images\task5.png" />
+    <None Remove="Images\task6.jpg" />
+    <None Remove="Images\task6.png" />
+    <None Remove="Images\task7.jpg" />
+    <None Remove="Images\task7.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignColors" Version="2.1.1" />
+    <PackageReference Include="MaterialDesignThemes" Version="4.7.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\desktop.jpg" />
+    <Resource Include="Images\task1.jpg" />
+    <Resource Include="Images\task1.png" />
+    <Resource Include="Images\task2.jpg" />
+    <Resource Include="Images\task2.png" />
+    <Resource Include="Images\task3.jpg" />
+    <Resource Include="Images\task3.png" />
+    <Resource Include="Images\task4.jpg" />
+    <Resource Include="Images\task4.png" />
+    <Resource Include="Images\task5.jpg" />
+    <Resource Include="Images\task5.png" />
+    <Resource Include="Images\task6.jpg" />
+    <Resource Include="Images\task6.png" />
+    <Resource Include="Images\task7.jpg" />
+    <Resource Include="Images\task7.png" />
+  </ItemGroup>
+
+</Project>

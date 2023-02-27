@@ -1,0 +1,91 @@
+﻿<Page x:Class="PDV.Task3.View.TaskPages.Task5Page"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PDV.Task3.View.TaskPages"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" 
+      d:DesignWidth="800"
+      Title="Task5Page">
+
+    <Border>
+        <Grid>
+            <Image x:Name="task5_jpg" Source="/Images/task5.jpg"
+                   Stretch="UniformToFill"/>
+
+            <Border HorizontalAlignment="Center"
+                    VerticalAlignment="Top"
+                    Width="266"
+                    Height="246"
+                    Margin="0,105,0,0"
+                    CornerRadius="50,50,50,50"
+                    Effect="{StaticResource MaterialDesignElevationShadow16}">
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="#FF2CF1FF" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0.5*" />
+                        <RowDefinition Height="1*" />
+                    </Grid.RowDefinitions>
+                    <Image Source="/Images/task5.png"
+                   Stretch="UniformToFill"/>
+
+                    <StackPanel Grid.Row="1"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="x = "
+                                       Foreground="White"
+                                       VerticalAlignment="Center" FontSize="24" FontWeight="Bold"/>
+                            <TextBox Width="45"
+                                     x:Name="TbX"
+                                     Foreground="White" BorderBrush="Black" BorderThickness="4,4,4,4" Height="38" FontSize="20"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal"
+                                    Margin="0 10 0 0"/>
+
+                        <Button HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                x:Name="BtnTask5"
+                                Click="BtnTask5_Click"
+                                Foreground="White" BorderBrush="#FF189CB5" Width="50" Height="38">
+                            <Button.Background>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="Black"/>
+                                    <GradientStop Color="#FF2CF1FF" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Button.Background>
+                            <StackPanel Orientation="Horizontal">
+                                <materialDesign:PackIcon Kind="Check"/>
+                            </StackPanel>
+                        </Button>
+                    </StackPanel>
+                </Grid>
+            </Border>
+            <StackPanel HorizontalAlignment="Left"
+                        VerticalAlignment="Top">
+                <Button
+                        Margin="720,10,0,0"
+                        x:Name="BtnMainPage"
+                        Click="BtnMainPage_Click"
+                        Foreground="{Binding ElementName=BtnMainPage, Path=BorderBrush}"
+                        Content="Back"
+                        ToolTip="Вернуться">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="Black"/>
+                            <GradientStop Color="#FF2CF1FF" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+        </Grid>
+    </Border>
+</Page>
